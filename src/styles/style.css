@@ -1,0 +1,195 @@
+.header {
+    font: 400 30px / 24px Inconsolata;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-left: 5.8%;
+}
+
+.navigation {
+    float: right;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    width: 54%;
+}
+
+.navelem {
+    margin: 5.6%;
+    color: #626262;
+    font: 300 14px / 24px PlayfairDisplay;
+}
+
+.bigphoto {
+    width: 88.5%;
+    padding-left: 5.8%;
+}
+
+.section {
+    margin: 5.8%;
+    width: 54.9%;
+    display: inline-block;
+}
+
+.sectionphoto {
+    width: 100%;
+    /*margin-top: 0.7%;
+    margin-bottom: 0.7%;*/
+    height: 90%;
+}
+
+.photocontainer {
+    margin-bottom: 3%;
+    margin-top: 3%;    
+}
+
+.aside {
+    width: 22.7%;
+    padding-right: 5.8%;
+    padding-top: 5.8%;
+    float: right;
+}
+
+.soсials {
+    margin-bottom: 25%;
+    margin-top: 10%;
+}
+
+.asidephoto {
+    width: 100%;
+}
+
+.about {
+    color: #626262;
+    font: 400 24px / 20px PlayfairDisplay;
+}
+
+.portrait {
+    color: #626262;
+    font: 400 12px / 20px PlayfairDisplay;
+}
+
+.socialimg {
+    margin-right: 5.6%;
+}
+
+.sectionname {
+    color: #b4ad9e;
+    font: 300 14px Ubuntu;
+}
+
+.title {
+    color: #626262;
+    font: 400 30px PlayfairDisplay;
+}
+
+.article {
+    color: #626262;
+    font: 400 14px / 24px PlayfairDisplay;
+}
+
+.quote {
+    color: #626262;
+    font: italic 14px / 24px PlayfairDisplay;
+    margin-left: 3%;
+}
+
+.topposts {
+    color: #b4ad9e;
+    font: 300 14px Ubuntu;
+}
+
+.top {    
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.postlist {
+    color: #b4ad9e;
+    padding-left: 20px;
+}
+
+.postname {
+    color: #626262;
+    font: 400 16px PlayfairDisplay;
+}
+
+.comments {
+    color: #b4ad9e;
+    font: 300 12px Ubuntu;
+}
+
+.listelem {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.banner {
+    background-color: #b4ad9e;
+    background-image: url(./../images/imagebcg.png);
+    height: 250px;
+    width: 250px;
+    background-size: 100%;
+    text-align: center;
+}
+
+.size {
+    color: #ffffff;
+    font: 300 48px Ubuntu;
+    padding-top: 38%;
+    margin: 3%;
+}
+
+.bannerspot {
+    color: #ffffff;
+    font: 300 14px Ubuntu;
+}
+
+footer {
+    background: url(./../images/background.png); 
+    height: 97px;
+}
+
+.followsocials {
+    float: right;    
+    margin: 3.5%;
+    width: 20%;
+}
+
+.follow {
+    color: #000000;
+    font: 400 14px / 24px PlayfairDisplay;
+    margin: 1.8%;
+}
+
+body {
+    margin: 0px;
+}
+
+.imgsocial {
+    margin-left: 10%;
+}
+
+.footeritems {
+    margin: 3.5%;
+    width: 40%;
+    color: #000000;
+    font: 400 14px / 24px PlayfairDisplay;
+    float: left;    
+    display: inline-block;
+}
+
+.terms {    
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.sharesocials {
+    margin-left: 45%;
+    width: 27%;
+    margin-bottom: 7%;
+}
+
+.share {
+    color: #b4ad9e;
+    font: 300 13px / 24px Ubuntu;
+    margin-right: 8%;
+}
