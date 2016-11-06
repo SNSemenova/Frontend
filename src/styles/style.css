@@ -1,50 +1,77 @@
-.header {
-    font: 400 30px / 24px Inconsolata;
-    letter-spacing: 5px;
+.container {
+    max-width: 1061px;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    margin: 5.8%;
+    margin-top: 30px;
+    height: 11px;
+}
+
+
+
+.logo {
+    width: 20%;
     display: inline-block;
-    margin-left: 5.8%;
+    background: url(./../images/minimo.png);
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 79%;
+    display: inline-block;
 }
 
 .navigation {
-    float: right;
-    margin-right: 2.5%;
-    margin-top: 3%;
-    width: 54%;
+    list-style: none;
+    padding: 0;
 }
 
-.navelem {
-    margin: 5.6%;
+.navigation__elem {
+    margin-left: 12%;
+    display: inline-block;
     color: #626262;
-    font: 300 14px / 24px PlayfairDisplay;
+    font: 400 14px / 24px PlayfairDisplay;
+    position: relative;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.bigphoto {
-    width: 88.5%;
-    padding-left: 5.8%;
+.big-photo {
+    margin-left: 5.8%;
+    margin-right: 5.8%;
+    background-image: url(./../images/image.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .section {
     margin: 5.8%;
+    margin-top: 36px;
     width: 54.9%;
     display: inline-block;
 }
 
-.sectionphoto {
-    width: 100%;
-    /*margin-top: 0.7%;
-    margin-bottom: 0.7%;*/
-    height: 90%;
+.section__photo {
+    width: 100%;  
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-.photocontainer {
-    margin-bottom: 3%;
-    margin-top: 3%;    
+.section__photocontainer {
+    padding-bottom: 50px;   
 }
 
-.aside {
+aside {
     width: 22.7%;
-    padding-right: 5.8%;
-    padding-top: 5.8%;
+    margin-right: 5.8%;
+    margin-top: 50px;
     float: right;
 }
 
@@ -53,53 +80,53 @@
     margin-top: 10%;
 }
 
-.asidephoto {
+.aside__photo {
     width: 100%;
 }
 
-.about {
+.aside__about {
     color: #626262;
     font: 400 24px / 20px PlayfairDisplay;
+    margin-bottom: 0;
 }
 
-.portrait {
+.aside__portrait {
     color: #626262;
     font: 400 12px / 20px PlayfairDisplay;
 }
 
-.socialimg {
-    margin-right: 5.6%;
-}
-
-.sectionname {
+.section__name {
     color: #b4ad9e;
     font: 300 14px Ubuntu;
+    text-transform: uppercase;
 }
 
-.title {
+.section__title {
     color: #626262;
     font: 400 30px PlayfairDisplay;
 }
 
-.article {
+.section__article {
     color: #626262;
     font: 400 14px / 24px PlayfairDisplay;
+    margin-bottom: 50px;
 }
 
-.quote {
+.section__quote {
     color: #626262;
     font: italic 14px / 24px PlayfairDisplay;
     margin-left: 3%;
 }
 
-.topposts {
+.top__posts {
     color: #b4ad9e;
     font: 300 14px Ubuntu;
+    text-transform: uppercase;
 }
 
 .top {    
     margin-bottom: 20%;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .postlist {
@@ -107,19 +134,20 @@
     padding-left: 20px;
 }
 
-.postname {
+.listelem__postname {
     color: #626262;
     font: 400 16px PlayfairDisplay;
 }
 
-.comments {
+.listelem__comments {
     color: #b4ad9e;
     font: 300 12px Ubuntu;
+    text-transform: uppercase;
 }
 
 .listelem {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .banner {
@@ -131,45 +159,94 @@
     text-align: center;
 }
 
-.size {
+.banner__size {
     color: #ffffff;
     font: 300 48px Ubuntu;
     padding-top: 38%;
     margin: 3%;
 }
 
-.bannerspot {
+.banner__spot {
     color: #ffffff;
     font: 300 14px Ubuntu;
+    text-transform: uppercase;
 }
 
-footer {
-    background: url(./../images/background.png); 
+footer { 
     height: 97px;
+    background-color: #d9d9d9;
+    margin-top: 40px;
 }
 
-.followsocials {
+.follow-socials {
     float: right;    
-    margin: 3.5%;
+    margin: 37px;
     width: 20%;
 }
 
-.follow {
+.follow-socials__follow {
     color: #000000;
     font: 400 14px / 24px PlayfairDisplay;
-    margin: 1.8%;
+    margin: 7%;
+    vertical-align: top;
 }
 
 body {
     margin: 0px;
 }
 
-.imgsocial {
-    margin-left: 10%;
+.socialimg {
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.fbimg {
+    background-image: url(./../images/fb.png);
+    
+}
+
+.twimg {
+    background-image: url(./../images/tw.png);
+}
+
+.gimg {
+    background-image: url(./../images/g+.png);
+}
+
+.tumblrimg {
+    background-image: url(./../images/tumblr.png);
+}
+
+.pinterestimg {
+    background-image: url(./../images/pinterest.png);
+}
+
+.instimg {
+    background-image: url(./../images/instagram2.png);
+}
+
+.follow-socials__inst-image-2 {
+    background-image: url(./../images/instagram.png);
+}
+
+.follow-socials__twitter-image {
+    background-image: url(./../images/twitter.png);
+}
+
+.follow-socials__facebook-image {
+    background-image: url(./../images/facebook.png)
+}
+.sharingsoc {
+    float: right;
+    width: 31%;
+    display: inline-block;
 }
 
 .footeritems {
-    margin: 3.5%;
+    margin: 37px;
     width: 40%;
     color: #000000;
     font: 400 14px / 24px PlayfairDisplay;
@@ -177,19 +254,24 @@ body {
     display: inline-block;
 }
 
-.terms {    
+.footeritems__element {    
     display: inline-block;
     margin-right: 4%;
+    text-decoration: none;
+    color: #000000;
 }
 
-.sharesocials {
-    margin-left: 45%;
-    width: 27%;
-    margin-bottom: 7%;
+.share-socials {
+    float: right;   
+    width: 100%;
+    position: absolute;
+    right: 15%;
 }
 
-.share {
+.share-socials__share {
     color: #b4ad9e;
     font: 300 13px / 24px Ubuntu;
-    margin-right: 8%;
+    margin-right: 3%;
+    float: right;
+    text-transform: uppercase;
 }
