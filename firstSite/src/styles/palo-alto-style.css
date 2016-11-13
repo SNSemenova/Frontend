@@ -1,0 +1,12 @@
+.container {
+    max-width: 1061px;
+    margin: auto;
+}
+
+.logo {
+    width: 20%;
+    display: inline-block;
+    background: url(./../images/.png);
+    height: 25px;
+    background-repeat: no-repeat;
+}

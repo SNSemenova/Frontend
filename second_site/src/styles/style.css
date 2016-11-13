@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    background-color: #f7f9fc;
+}
+
+.container {
+    max-width: 952px;
+    margin: auto;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+.header__logo {
+    width: 22%;
+    display: inline-block;
+    background: url(./../images/Palo-Alto.png);
+    height: 33px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav {
+    width: 77%;
+    display: inline-block;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation__elem {
+    color: rgb( 0, 0, 0 );
+    margin-left: 30px;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.563;
+    text-align: right;
+}
+
+.navigation__elem_home {
+    color: rgb( 189, 189, 189 );
+}
+
+.navigation__elem_search {
+    background-image: url(./../images/search.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.navigation__elem_footer-search {
+    background-image: url(./../images/search.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.navigation__elem_footer {    
+    color: rgb( 255, 255, 255 );
+}
+
+.section {
+    margin-top: 36px;
+    background-color: rgb(255,255,255);    
+    padding: 98px;
+    padding-top: 58px;
+    padding-bottom: 78px;
+    box-shadow: 0px 0px 40px -5px rgb( 200, 200, 200 );
+}
+
+.article__big-photo {
+    position: relative;
+    left: -98px;
+    top: -58px;
+    width: 953px;
+}
+
+.article__photo {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.article__date {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb( 189, 189, 189 );
+    font-weight: bold;
+    line-height: 3.571;
+    text-align: left;
+    left: 322px;
+    top: 250px;
+    width: 42px;
+    height: 15px;
+    z-index: 65;
+}
+
+.article__header {
+    font-size: 40px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    font-weight: bold;
+    line-height: 1.25;
+    margin-top: 0;
+}
+
+.article__separator {
+    background-image: url(./../images/sep.png);
+    width: 100%;
+    height: 2px;
+    background-repeat: no-repeat;
+}
+
+.article__paragraph {
+    font-size: 17px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    line-height: 1.765;
+    opacity: 0.8;
+}
+
+.article__italic-paragraph {
+    font-size: 25px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    font-style: italic;
+    line-height: 1.52;
+    text-align: left;
+    opacity: 0.502;
+    width: 754px;
+    height: 138px;
+    z-index: 48;
+}
+
+.article__quote {
+    background-image: url(./../images/quote.png);
+    width: 5px;
+    height: 50px;
+    display: inline-block;
+}
+
+.article__quotation {
+    font-size: 20px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    line-height: 1.5;
+    opacity: 0.4;
+    width: 697px;
+    height: 48px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.article__read-more {
+    font-size: 21px;
+    font-family: "Lato";
+    color: rgb( 92, 107, 192 );
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.381;
+    text-align: left;
+    width: 122px;
+    height: 17px;
+    text-decoration: none;
+}
+
+.tags {
+    float: right;
+}
+
+.tags__elem {
+    margin-left: 10px;
+    float: right;    
+    font-size: 15px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    line-height: 3.333;
+    text-align: right;
+    opacity: 0.302;
+    list-style-type: none
+}
+
+.footer { 
+    background-color: #5c6bc0;
+    padding: 10%;
+}
+
+.palo-alto {
+    font-size: 36px;
+    font-family: "Lato";
+    color: rgb( 0, 0, 0 );
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.694;
+    text-align: left;
+    opacity: 0.2;    
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.footer-nav {
+    width: 40%;
+    margin: auto;
+}
