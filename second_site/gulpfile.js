@@ -5,15 +5,21 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var reload = browserSync.reload;
+var cssmin = require('gulp-cssmin');
+const autoprefixer = require('gulp-autoprefixer');
 
 var path = {
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
+    vendor: {
+        css:  'vendor/styles/*.css'
+    },
     images: 'src/images/*.*',
     dist: {
       css:  'dist/styles/',
       images: 'dist/images',
-      html: 'dist/'
+      html: 'dist/',
+      vendor: 'dist/vendor/'
     }
 };
 
@@ -21,7 +27,11 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 gulp.task('css', function () {
   return gulp.src(path.css)
-    .pipe(concat('style.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions']
+    }))
+    .pipe(cssmin())
+    .pipe(concat('style.css'))  
     .pipe(gulp.dest(path.dist.css));
 });
 

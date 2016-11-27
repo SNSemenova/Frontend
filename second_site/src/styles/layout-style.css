@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    background-color: #f7f9fc;
+}
+
+.container {
+    max-width: 952px;
+    margin: auto;
+}
+
+.header {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.nav {
+    width: 77%;
+    display: inline-block;
+    float: right;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__elem {
+    color: rgb( 0, 0, 0 );
+    margin-left: 30px;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.563;
+    text-align: right;
+    transition: border 1s ease-in-out;
+}
+
+.navigation__elem:hover {
+    border-bottom: solid;
+}
+
+.navigation__elem_home {
+    color: rgb( 189, 189, 189 );
+}
+
+.navigation__elem_search {
+    background-image: url(./../images/search.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.navigation__elem_footer-search {
+    background-image: url(./../images/whiteSearch.png);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.navigation__elem_footer {    
+    color: rgb( 255, 255, 255 );
+}
+
+.footer { 
+    background-color: #5c6bc0;
+    padding: 65px;
+    padding-left: 22%;
+    padding-right: 22%;
+    margin-top: 115px;
+    text-align: center;
+}
+
+.palo-alto {
+    text-align: center;
+    margin-bottom: 60px;
+    display: block;
+}
+
+.footer-nav {
+    width: 470px;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+.footer__text {
+    font-size: 13px;
+    font-family: "Lato", serif;
+    color: rgb( 255, 255, 255 );
+    line-height: 1.769;
+    text-align: center;
+    opacity: 0.4;
+    margin: auto;
+    border-top-style: outset;
+    border-color: #5765b5;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    border-bottom-style: inset;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    line-height: 2.143;
+    font-family: "Lato", serif;
+    text-align: center;
+    color: #99a2d7;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.footer__company {
+    color: rgb( 255, 255, 255 );
+}
+
+.socials {
+    margin: auto;
+    width: 210px;
+}
+
+.socials__element {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin: 11px;
+}
+
+.socials__element_fb {
+    background-image: url(./../images/facebook.png);
+    
+}
+
+.socials__element_tw {
+    background-image: url(./../images/twitter.png);
+}
+
+.socials__element_inst {
+    background-image: url(./../images/instagram.png);
+}
+
+.socials__element_pin {
+    background-image: url(./../images/pinterest.png);
+}
