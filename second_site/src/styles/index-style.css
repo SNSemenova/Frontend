@@ -26,9 +26,10 @@
 .article__button-category:hover {
     background: #6B78C5;
     padding: 12px 22px;
-    height: 36px;
     left: 117px;
     bottom: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .article__button-category:active {
   background: #525FAB;
@@ -104,6 +105,7 @@
     display: inline-block;
     padding-left: 20px;
     border-left-style: inset;
+    width: 100%;
 }
 
 .article__read-more {
@@ -137,16 +139,130 @@
 
 .tags__list {
     margin: 0;
+    padding: 0;
 }
 
 .tags__elem {
-    margin-left: 10px;
-    float: right;    
+    margin-left: 10px;  
     font-size: 15px;
     font-family: "Lato", serif;
     color: rgb( 0, 0, 0 );
     line-height: 3.333;
     text-align: right;
     opacity: 0.302;
-    list-style-type: none
+    list-style-type: none;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .article {
+        padding: 40px 50px; 
+    }
+    .article__big-photo {
+        width: 480px;
+        left: -50px;
+        top: -40px;
+        width: 126%;
+    }
+    
+    .article__button-category {
+        left: 50px;
+        bottom: 40px;
+        font-size: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .article__header {
+        font-size: 32px;
+        line-height: 1.313;
+    }
+    
+    .tags {
+        float: none;
+    }
+    
+    .tags__elem {
+        display: inline;
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .article__date {
+        font-size: 18px;
+        line-height: 2.778;
+    } 
+    
+    
+    .article__paragraph {
+      font-size: 18px;
+      line-height: 1.889;
+    }
+    
+    .article__read-more {
+        font-size: 24px;
+    }    
+    
+    .article__italic-paragraph {
+      font-size: 21px;
+      line-height: 1.524;
+    }
+    
+    .article__button-category_up {
+        bottom: 362px;
+    }
+    
+    .article__photo {
+        float: none;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {    
+    .article__button-category {
+        font-size: 15px;
+        left: 25px;
+        bottom: 20px;
+    }
+    .article__button-category_up {
+        bottom: 210px;
+    }
+    .article__date {
+      font-size: 15px;
+    }
+    .article__header {
+      font-size: 24px;
+      line-height: 1.333;
+    }
+    .article__paragraph {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .article__read-more {
+      font-size: 20px;
+    }
+    .tags__elem {
+        font-size: 15px;
+    }
+
+    .article__italic-paragraph {
+      font-size: 18px;
+      line-height: 1.667;
+    }
+
+    .article__quotation {
+      font-size: 17px;
+      line-height: 1.588;
+    }
+    .article__big-photo {
+        width: 122%;
+        left: -25px;
+        top: -20px;
+    }
+    .article {
+        padding: 20px 25px;
+    }
+
 }

@@ -72,3 +72,48 @@
     height: 120px;
     width: 92%;
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section__header {
+      font-size: 32px;
+    }
+    .section__paragraph {
+      font-size: 18px;
+      line-height: 1.889;
+        
+  font-size: 16px;
+  line-height: 1.75;
+    }
+    .message-form {
+        width: 84%
+    }
+    .message-form__textarea {
+        height: 165px;
+    }
+    .message-form_email {
+        float: none; 
+    }
+}
+
+@media (max-width: 320px) {
+    .section {
+        padding: 50px 25px 55px;
+    }
+    .section__header {
+      font-size: 24px;
+    }
+    .section__paragraph {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .message-form {
+        padding: 10px 20px;
+    }
+    .message-form__textarea {
+        height: 190px;
+    }
+}

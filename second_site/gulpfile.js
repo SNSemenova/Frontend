@@ -12,7 +12,7 @@ var path = {
     css:  'src/styles/*.css',
     html: 'src/templates/*.html',
     vendor: {
-        css:  'vendor/styles/*.css'
+        css:  'src/vendor/styles/*.css'
     },
     images: 'src/images/*.*',
     dist: {
@@ -35,6 +35,16 @@ gulp.task('css', function () {
     .pipe(gulp.dest(path.dist.css));
 });
 
+gulp.task('vendor', function () {
+  return gulp.src(path.vendor.css)
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions']
+    }))
+    .pipe(cssmin())
+    .pipe(concat('style.css'))  
+    .pipe(gulp.dest(path.dist.vendor));
+})
+
 gulp.task('html', function () {
   return gulp.src(path.html)
     .pipe(nunjucks.compile())
@@ -53,12 +63,13 @@ gulp.task('images', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('build', ['html', 'css', 'images']);
+gulp.task('build', ['html', 'css', 'images', 'vendor']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
   gulp.watch(path.html, ['html']);
   gulp.watch(path.images, ['images']);
+  gulp.watch(path.images, ['vendor']);
 });
 
 gulp.task('serve', ['watch'], function() {

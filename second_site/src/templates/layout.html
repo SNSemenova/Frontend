@@ -2,18 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="сайт, статьи">
         <meta name="description" content="Сайт со статьями">
         <title>PaloAlto</title>
-        <link rel="shortcut icon" href="./../images/favicon.ico" sizes="32x32"/>
-        <link rel="stylesheet" href="./../styles/style.css">
+        <link rel="shortcut icon" href="./images/favicon.ico" sizes="32x32"/>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./vendor/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> 
     </head>
     <body>
         <div class="container">
             <header class="header">
                 <a href="index.html">
-                    <img src="./../images/Palo-Alto.png">
+                    <img src="./images/Palo-Alto.png">
                 </a>
                 <nav class="nav">
                     <ul class="navigation">
@@ -31,29 +33,31 @@
             
         </div>        
         <footer class="footer">
-            <a href="index.html" class="palo-alto">
-                    <img src="./../images/PaloAlto.png">
-            </a>
-            <nav class="footer-nav">
-                    <ul class="navigation">                       
-                        <li><a href=# class="navigation__elem navigation__elem_footer-search"></a></li>
-                        <li><a href="contacts.html" class="navigation__elem navigation__elem_footer">contact</a></li>
-                        <li><a href=# class="navigation__elem navigation__elem_footer">archive</a></li>
-                        <li><a href=# class="navigation__elem navigation__elem_footer">about</a></li>
-                        <li><a href="index.html" class="navigation__elem navigation__elem_home">home</a></li>
-                    </ul>
-            </nav>
-            <div class="footer__text">
-                Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.
-            </div>
-            <div class="footer__copyright">
-                © 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <span class="footer__company">PixelBuddha Team</span>
-            </div>
-            <div class="socials">
-                <a href="#" class="socials__element socials__element_fb"></a>
-                <a href="#" class="socials__element socials__element_tw"></a>
-                <a href="#" class="socials__element socials__element_inst"></a>
-                <a href="#" class="socials__element socials__element_pin"></a>
+            <div class="footer__container">
+                <a href="index.html" class="palo-alto">
+                        <img src="./images/PaloAlto.png">
+                </a>
+                <nav class="footer-nav">
+                        <div class="navigation"> 
+                            <a href="index.html" class="navigation__elem navigation__elem_footer-home navigation__elem_home">home</a>
+                            <a href=# class="navigation__elem navigation__elem_footer">about</a>
+                            <a href=# class="navigation__elem navigation__elem_footer">archive</a>
+                            <a href="contacts.html" class="navigation__elem navigation__elem_footer">contact</a>
+                            <a href=# class="navigation__elem navigation__elem_footer-search"></a>
+                        </div>
+                </nav>
+                <div class="footer__text">
+                    Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.
+                </div>
+                <div class="footer__copyright">
+                    © 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <span class="footer__company">PixelBuddha Team</span>
+                </div>
+                <div class="socials">
+                    <a href="#" class="socials__element socials__element_fb"></a>
+                    <a href="#" class="socials__element socials__element_tw"></a>
+                    <a href="#" class="socials__element socials__element_inst"></a>
+                    <a href="#" class="socials__element socials__element_pin"></a>
+                </div>
             </div>
         </footer>
     </body>
