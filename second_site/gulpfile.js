@@ -9,17 +9,23 @@ var cssmin = require('gulp-cssmin');
 const autoprefixer = require('gulp-autoprefixer');
 
 var path = {
-    css:  'src/styles/*.css',
+    css:  'src/styles/*.css',    
     html: 'src/templates/*.html',
     vendor: {
         css:  'src/vendor/styles/*.css'
     },
     images: 'src/images/*.*',
+    js: 'src/scripts/*.js',
+    partials: 'src/templates/partials/*.html',
+    mock: 'src/mockapi/*.json',
     dist: {
       css:  'dist/styles/',
       images: 'dist/images',
       html: 'dist/',
-      vendor: 'dist/vendor/'
+      vendor: 'dist/vendor/',      
+      js: 'dist/scripts/',
+      partials: 'dist/partials/',
+      mock: 'dist/mockapi/'
     }
 };
 
@@ -63,13 +69,32 @@ gulp.task('images', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('build', ['html', 'css', 'images', 'vendor']);
+gulp.task('mock', function () {
+  return gulp.src(path.mock)
+    .pipe(gulp.dest(path.dist.mock));
+});
+
+gulp.task('partials', function () {
+  return gulp.src(path.partials)
+    .pipe(gulp.dest(path.dist.partials));
+});
+
+gulp.task('js', function () {
+  return gulp.src(path.js)
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(path.dist.js));
+});
+
+gulp.task('build', ['html', 'css', 'images', 'vendor', 'partials', 'mock', 'js']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
   gulp.watch(path.html, ['html']);
   gulp.watch(path.images, ['images']);
-  gulp.watch(path.images, ['vendor']);
+  gulp.watch(path.vendor.css, ['vendor']);    
+  gulp.watch(path.mock, ['mock']);    
+  gulp.watch(path.js, ['js']);
+  gulp.watch(path.partials, ['partials']);
 });
 
 gulp.task('serve', ['watch'], function() {

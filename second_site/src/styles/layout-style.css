@@ -13,6 +13,13 @@ body {
     margin-bottom: 80px;
 }
 
+.burger {
+    background-color: transparent;
+    border: none;
+    float: right;
+    display: none;
+}
+
 .nav {
     width: 77%;
     display: inline-block;
@@ -164,7 +171,11 @@ body {
     
     .nav {
         width: 100%;
-        margin-top: 15px;
+        display: none;
+    }
+    
+    .burger {
+        display: inline-block;
     }
     
     .navigation__elem_footer-search {
@@ -201,6 +212,10 @@ body {
         margin-bottom: 65px;
     }
     .nav {
-        font-size: 11px;
+        width: 100%;
+        display: none;
+    }    
+    .burger {
+        display: inline-block;
     }
 }
