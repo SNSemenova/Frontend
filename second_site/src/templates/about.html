@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<main> 
+   <section class="section">
+        <h2 class="header-about">About</h2>                
+        <form class="form">
+            <div class="form__elem">
+            <label for="1">First Name</label>
+            <input id="1" name="first-name" type="text" class="field" placeholder="John">
+            <div class="error-container"></div>
+            </div>
+            <div class="form__elem">
+            <label for="2">Last Name</label>
+            <input id="2" name="last-name" type="text" class="field" placeholder="Doe">            
+            <div class="error-container"></div>
+            </div>
+            <div class="form__elem">
+            <label for="3">E-mail</label>
+            <input id="3" name="email" type="text" class="field" placeholder="johndoe@mail.com">
+            <div class="error-container"></div>
+            </div>
+            <div class="form__elem">
+            <label for="4">Phone</label>
+            <input id="4" name="phone" type="text" class="field" placeholder="+_(___)___-__-__"> 
+            <div class="error-container"></div> 
+            </div>
+            <div class="form__elem">
+            <label for="5">Date of Birth</label>
+            <input id="5" name="birth" type="text" class="field" placeholder="DD/MM/YYYY"> 
+            <div class="error-container"></div>              
+            </div>
+            <div class="form__elem">
+            <label for="gender">Sex</label><br>
+            <input type="radio" name="gender" value="male" checked> 
+            <span class="radio">Male</span><br>
+            <input type="radio" name="gender" value="female"> <span class="radio">Female</span><br>
+            </div>
+            <button type="submit" class="button-submit">Submit</button>
+       </form>
+    </section>        
+</main>
+{% endblock %}        

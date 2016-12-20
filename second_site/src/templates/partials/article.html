@@ -1,24 +1,28 @@
+{% for item in articles %}
 <article class="article">
-    {% if bigPhoto1 %}
-    <img srcset="{{bigPhoto1}} 1x, {{bigPhoto2}} 2x" class="article__big-photo" alt="mountain" width="953">
+    {% if item.bigPhoto1 %}
+    <img srcset="{{item.bigPhoto1}} 1x, {{bigPhoto2}} 2x" class="article__big-photo" alt="mountain" width="953">
     {% endif %}
     <button type="button" class="article__button-category
             {% if bigPhoto1 %} article__button-category_up 
-                                 {% endif %}">{{iDo}}</button>
-    <span class="article__date">{{date}}</span>
-    <h2 class="article__header">{{title}}</h2>
-    {% if photo %}
-    <img srcset="{{photo}}" class="article__photo" alt="statue" height="450" width="185">
+                                 {% endif %}">{{item.iDo}}</button>
+    <span class="article__date">{{item.date}}</span>
+    <h2 class="article__header">{{item.title}}</h2>
+    {% if item.photo %}
+    <img srcset="{{item.photo}}" class="article__photo" alt="statue" height="450" width="185">
     {% endif %}
     <p class="article__paragraph">
-        {{text}}
+        {{item.text}}
     </p>
     <button type="button" class="article__read-more">read more</button>
     <div class="tags">
         <ul class="tags__list">
-            <li class="tags__elem">{{tags[1]}}</li>
-            <li class="tags__elem">{{tags[2]}}</li>
-            <li class="tags__elem">{{tags[3]}}</li>
+            <li class="tags__elem">{{item.tags[1]}}</li>
+            <li class="tags__elem">{{item.tags[2]}}</li>
+            <li class="tags__elem">{{item.tags[3]}}</li>
         </ul>
     </div>
-</article>   
+</article>  
+{% else %}
+<span>ksakfieusi</span>
+{% endfor %}

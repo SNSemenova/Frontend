@@ -9,16 +9,10 @@ $(document).ready(function () {
   $.ajax({
     url: "./mockapi/structure.json",
     success: function(data, status) {
-      for (item in data.articles) {
-        nunjucks.render('./partials/article.html', data.articles[item], function (err, res) {
-          $('.js-articles').append(res);
-        });
-      }
+        nunjucks.render('./partials/article.html', data, function (err, res) {
+            $('.js-articles').append(res);      
+        });        
     }
-   ,   error: function (xhr, ajaxOptions, thrownError) {
-        console.log(xhr.status);
-        console.log(thrownError);
-      }
   });
 
 });
@@ -26,3 +20,10 @@ $(document).ready(function () {
 $(".burger").click(function(){
     $(".nav").toggle();
 });
+
+$(".form").on("submit", function(event) {
+  if ($( this ).val() == "") {
+    $( ".error-container" ).html("You must fill in this field");
+    return false;      
+  }
+})

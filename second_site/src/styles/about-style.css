@@ -1,0 +1,60 @@
+.header-about {
+    font-size: 40px;
+    font-family: "Lato";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.25;
+    width: 100%;
+    border-bottom-style: inset;
+    border-bottom-width: thin;
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+}
+
+.form {
+    padding: 0px 26%;
+    font-family: "Lato";
+}
+
+.form__elem {
+    margin-bottom: 40px;
+}
+
+.field {
+    width: 100%;
+    height: 56px;
+    background-color: #f7f9fc;
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgba(51,51,51,.302);
+    line-height: 1.5;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.radio { 
+    font-size: 20px;
+    color: rgba(51,51,51,.302);
+    line-height: 1.5;
+}
+
+.button-submit {
+    color: rgb(255, 255, 255);
+    background-color: #5c6bc0;
+    border: none;
+    width: 165px;
+    height: 62px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: "Lato", serif;
+    margin-top: 35px;
+}
+
+.error-container {
+    font-size: 12px;
+    font-family: "Lato";
+    color: rgb(227, 78, 78);
+    line-height: 4.167;
+}
